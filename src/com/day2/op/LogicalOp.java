@@ -30,12 +30,17 @@ public class LogicalOp {
 		 */
 		
 		int p=0, q=1;
-		if( (p++==0) | (q++==2 ) )
+		if( (p++==0) | (q++==2 ) ) {
+			System.out.println("p="+p+", q="+q); 
+			p=42;
+		}
+		System.out.println("p="+p+", q="+q+"\n"); 
+		
+		p=0; q=1;
+		if( (p++==0) || (q++==2 ) ) {
 		p=42;
 		System.out.println("p="+p+", q="+q); 
-		p=0; q=1;
-		if( (p++==0) || (q++==2 ) )
-		p=42;
+		}
 		System.out.println("p="+p+", q="+q); 
 	}
 
