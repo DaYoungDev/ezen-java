@@ -20,7 +20,7 @@ public class CollectionExam {
 		System.out.println("\n=====배열 이용=========");
 		double[] dArr = new double[4];
 		for(int i = 0; i < dArr.length; i++) {
-			dArr[i] = i + 1 + 0.5;
+			dArr[i] = i + 1.5;
 		}
 		for(double d2 : dArr) {
 			System.out.println(d2);
@@ -29,7 +29,7 @@ public class CollectionExam {
 		System.out.println("\n====HashSet iterator<> 이용====");
 		HashSet<Double> hSet = new HashSet<Double>(4);
 		for(int i = 0 ; i < 4; i++) {
-			hSet.add(i + 1 + 0.5);
+			hSet.add(i + 1.5);
 		}
 		Iterator<Double> itr = hSet.iterator();
 		while(itr.hasNext()) {
